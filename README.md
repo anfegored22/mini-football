@@ -1,1 +1,1 @@
-# -mini-football
+# mini-football
