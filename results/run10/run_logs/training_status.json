@@ -1,0 +1,47 @@
+{
+    "FootballPlayer": {
+        "checkpoints": [
+            {
+                "steps": 499955,
+                "file_path": "results\\run10\\FootballPlayer\\FootballPlayer-499955.onnx",
+                "reward": null,
+                "creation_time": 1675133319.4584563,
+                "auxillary_file_paths": [
+                    "results\\run10\\FootballPlayer\\FootballPlayer-499955.pt"
+                ]
+            },
+            {
+                "steps": 999985,
+                "file_path": "results\\run10\\FootballPlayer\\FootballPlayer-999985.onnx",
+                "reward": 0.2403333087762197,
+                "creation_time": 1675133767.557466,
+                "auxillary_file_paths": [
+                    "results\\run10\\FootballPlayer\\FootballPlayer-999985.pt"
+                ]
+            },
+            {
+                "steps": 1000369,
+                "file_path": "results\\run10\\FootballPlayer\\FootballPlayer-1000369.onnx",
+                "reward": 0.2403333087762197,
+                "creation_time": 1675133767.6315553,
+                "auxillary_file_paths": [
+                    "results\\run10\\FootballPlayer\\FootballPlayer-1000369.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1000369,
+            "file_path": "results\\run10\\FootballPlayer.onnx",
+            "reward": 0.2403333087762197,
+            "creation_time": 1675133767.6315553,
+            "auxillary_file_paths": [
+                "results\\run10\\FootballPlayer\\FootballPlayer-1000369.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.13.1+cpu"
+    }
+}

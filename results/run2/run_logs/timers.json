@@ -1,0 +1,42 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1675129843",
+        "python_version": "3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\carlo\\Envs\\rl-unity\\Scripts\\mlagents-learn config/FootballPlayer.yml --run-id=run2",
+        "mlagents_version": "0.30.0",
+        "mlagents_envs_version": "0.30.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.13.1+cpu",
+        "numpy_version": "1.21.5",
+        "end_time_seconds": "1675129879"
+    },
+    "total": 35.8159732,
+    "count": 1,
+    "self": 0.008045199999997976,
+    "children": {
+        "run_training.setup": {
+            "total": 0.13527190000000022,
+            "count": 1,
+            "self": 0.13527190000000022
+        },
+        "TrainerController.start_learning": {
+            "total": 35.672656100000005,
+            "count": 1,
+            "self": 0.00015220000000937262,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 35.6724938,
+                    "count": 1,
+                    "self": 35.6724938
+                },
+                "TrainerController._save_models": {
+                    "total": 1.0099999997237319e-05,
+                    "count": 1,
+                    "self": 1.0099999997237319e-05
+                }
+            }
+        }
+    }
+}

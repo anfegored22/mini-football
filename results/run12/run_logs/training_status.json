@@ -1,0 +1,65 @@
+{
+    "FootballPlayer": {
+        "checkpoints": [
+            {
+                "steps": 41999991,
+                "file_path": "results\\run12\\FootballPlayer\\FootballPlayer-41999991.onnx",
+                "reward": 0.3737941147102153,
+                "creation_time": 1675180891.0782244,
+                "auxillary_file_paths": [
+                    "results\\run12\\FootballPlayer\\FootballPlayer-41999991.pt"
+                ]
+            },
+            {
+                "steps": 42499992,
+                "file_path": "results\\run12\\FootballPlayer\\FootballPlayer-42499992.onnx",
+                "reward": 0.2844701118737578,
+                "creation_time": 1675181255.8980498,
+                "auxillary_file_paths": [
+                    "results\\run12\\FootballPlayer\\FootballPlayer-42499992.pt"
+                ]
+            },
+            {
+                "steps": 42999996,
+                "file_path": "results\\run12\\FootballPlayer\\FootballPlayer-42999996.onnx",
+                "reward": 0.27807864039466623,
+                "creation_time": 1675181608.8248165,
+                "auxillary_file_paths": [
+                    "results\\run12\\FootballPlayer\\FootballPlayer-42999996.pt"
+                ]
+            },
+            {
+                "steps": 43499985,
+                "file_path": "results\\run12\\FootballPlayer\\FootballPlayer-43499985.onnx",
+                "reward": 0.3207916528917849,
+                "creation_time": 1675181970.0016365,
+                "auxillary_file_paths": [
+                    "results\\run12\\FootballPlayer\\FootballPlayer-43499985.pt"
+                ]
+            },
+            {
+                "steps": 43616115,
+                "file_path": "results\\run12\\FootballPlayer\\FootballPlayer-43616115.onnx",
+                "reward": 0.30928167974730014,
+                "creation_time": 1675182177.872894,
+                "auxillary_file_paths": [
+                    "results\\run12\\FootballPlayer\\FootballPlayer-43616115.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 43616115,
+            "file_path": "results\\run12\\FootballPlayer.onnx",
+            "reward": 0.30928167974730014,
+            "creation_time": 1675182177.872894,
+            "auxillary_file_paths": [
+                "results\\run12\\FootballPlayer\\FootballPlayer-43616115.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.13.1+cpu"
+    }
+}

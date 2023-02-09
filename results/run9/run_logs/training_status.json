@@ -1,0 +1,29 @@
+{
+    "FootballPlayer": {
+        "checkpoints": [
+            {
+                "steps": 255708,
+                "file_path": "results\\run9\\FootballPlayer\\FootballPlayer-255708.onnx",
+                "reward": null,
+                "creation_time": 1675132652.497813,
+                "auxillary_file_paths": [
+                    "results\\run9\\FootballPlayer\\FootballPlayer-255708.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 255708,
+            "file_path": "results\\run9\\FootballPlayer.onnx",
+            "reward": null,
+            "creation_time": 1675132652.497813,
+            "auxillary_file_paths": [
+                "results\\run9\\FootballPlayer\\FootballPlayer-255708.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.13.1+cpu"
+    }
+}
