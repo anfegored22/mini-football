@@ -8,32 +8,46 @@ public class ScoreGoal : MonoBehaviour
     int goals = 0;
     int not_goals = 0;
     [SerializeField] GameObject environment;
-    [SerializeField] GameObject field;
+    [SerializeField] GameObject Goal;
     [SerializeField] Material winMaterial;
     [SerializeField] Material loseMaterial;
+    GameObject bounds;
+    GameObject line;
+    GameObject field;
 
-    void OnTriggerEnter(Collider other)
+    private void Start()
     {
-        if (other.gameObject.CompareTag("Goal"))
+        bounds = GameObject.Find("Football Field/Glass");
+        line = GameObject.Find("Football Field/Line");
+        field = GameObject.Find("Football Field/Field");
+    }
+
+
+    private void Update()
+    {
+
+        MeshCollider goal_collider = Goal.GetComponent<MeshCollider>();
+        if (goal_collider.bounds.Contains(transform.position))
         {
             goals++;
-            Debug.Log("goals: " + goals);
-            field.GetComponent<MeshRenderer>().material = winMaterial;
-            environment.GetComponent<FootballPlayer>().AddReward(1f);
-            environment.GetComponent<FootballPlayer>().EndEpisode();
-            // RestartBallPosition();
+            AddRewardRestart(1f, winMaterial);
         }
 
-        else if(other.gameObject.CompareTag("Not Goal"))
+        // If ball is out of range, restart game.
+        MeshCollider m_collider = bounds.GetComponent<MeshCollider>();
+        if (transform.position.z > line.transform.position.z)
         {
             not_goals++;
-            Debug.Log("not_goals: " + not_goals);
-            field.GetComponent<MeshRenderer>().material = loseMaterial;
-            environment.GetComponent<FootballPlayer>().AddReward(0.05f);
-            environment.GetComponent<FootballPlayer>().EndEpisode();
-            // RestartBallPosition();
+            AddRewardRestart(0.05f, loseMaterial);
         }
+        if (!m_collider.bounds.Contains(transform.position))
+        {
+            AddRewardRestart(0f, loseMaterial);
+        }
+
+
     }
+
 
     public void RestartBallPosition()
     {
@@ -50,5 +64,13 @@ public class ScoreGoal : MonoBehaviour
         GetComponent<Rigidbody>().velocity = new Vector3(0,0,0);
         GetComponent<Rigidbody>().angularVelocity = new Vector3(0,0,0);
     }
+
+    void AddRewardRestart(float r, Material m)
+    {
+        field.GetComponent<MeshRenderer>().material = m;
+        environment.GetComponent<FootballPlayer>().AddReward(r);
+        environment.GetComponent<FootballPlayer>().EndEpisode();
+        RestartBallPosition();
+    } 
 
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17276844, g: 0.21589245, b: 0.2978263, a: 1}
+  m_IndirectSpecularColor: {r: 0.17276774, g: 0.21589115, b: 0.2978246, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -383,6 +383,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &770766704 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6429798604392108958, guid: 5e3e91c6653770746885b62cb57858e6, type: 3}
+  m_PrefabInstance: {fileID: 6429798605588181471}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,10 +479,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6429798604963696523, guid: 5e3e91c6653770746885b62cb57858e6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429798604963696523, guid: 5e3e91c6653770746885b62cb57858e6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.09
+      objectReference: {fileID: 0}
     - target: {fileID: 6429798605255564212, guid: 5e3e91c6653770746885b62cb57858e6, type: 3}
       propertyPath: DecisionPeriod
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6429798605255564213, guid: 5e3e91c6653770746885b62cb57858e6, type: 3}
+      propertyPath: field
+      value: 
+      objectReference: {fileID: 770766704}
     - target: {fileID: 6429798605255564214, guid: 5e3e91c6653770746885b62cb57858e6, type: 3}
       propertyPath: m_Model
       value: 
@@ -537,6 +554,42 @@ PrefabInstance:
     - target: {fileID: 6429798605255564217, guid: 5e3e91c6653770746885b62cb57858e6, type: 3}
       propertyPath: m_Name
       value: Mini Football Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429798605694289759, guid: 5e3e91c6653770746885b62cb57858e6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429798605694289759, guid: 5e3e91c6653770746885b62cb57858e6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 8352663753500369313, guid: 5e3e91c6653770746885b62cb57858e6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 8352663753500369313, guid: 5e3e91c6653770746885b62cb57858e6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8352663753500369313, guid: 5e3e91c6653770746885b62cb57858e6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906619638748975353, guid: 5e3e91c6653770746885b62cb57858e6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 9.824051
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906619638748975353, guid: 5e3e91c6653770746885b62cb57858e6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.0106
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906619638748975353, guid: 5e3e91c6653770746885b62cb57858e6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.011066
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906619638748975353, guid: 5e3e91c6653770746885b62cb57858e6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.8335
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e3e91c6653770746885b62cb57858e6, type: 3}
